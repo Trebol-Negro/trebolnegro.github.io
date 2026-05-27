@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+        
+        <title>Trébol Negro</title>
+        
+        <link rel="stylesheet" href="Estilos.css">
+        
+        <link rel="icon" type="png" sizes="32x32" href="Imagenes/icono.png">
+    </head>
+    
+
+    
+    <body>
+        
+    <header>
+        <div id="carta">
+            <img src="Imagenes/HEADER%20cut.png" alt="Trébol Negro" style="max-height: 200px;">
+        </div>
+        
+        
+        <button id="openMenu">Open menu</button>
+        
+    </header>
+        
+        
+        <main>
+            <!--Lateral-->
+            <section class="Lateral">
+
+                <!--musica-->
+                
+                <div class="Cancion">
+                    <p class="cancion-text">Feel free to listen to some music while you look around ♡</p>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.albumoftheyear.org%2Falbum%2F763380-pawprint-panic_2016.jpg&f=1&nofb=1&ipt=53751094a86b425ed993b207b6d44333688432f82d5cb0cf7afc050fb0221d67" id="cover">
+                    <a href="https://youtu.be/1zbA_vwRqZc?si=qkYLAyh5qSkPn6Ua" target="_blank" >
+                        <marquee scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" class="titulo-musica">
+                            <p class="link-cancion">🔎︎ Seaside Summer - NAPCAST</p>
+                        </marquee>
+                    </a>
+
+                     <audio controls style="width:200px; height:25px;" src="mp3/Seaside%20Summer%20%5B1zbA_vwRqZc%5D.mp3"></audio>
+                </div>
+                
+                <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+           
+            
+            <section class="cuerpo">            
+                <div class="About">
+                    <div class="About-int">
+                        <h1>About me</h1> 
+                        <p class="text">Hello! My name is Trébol and I'm an artist and Graphic Design student. I draw whatever satiates the tiny little worms that live in my brain. </p><p>I've created this website as a portfolio for my art and projects I participate in, so don't be shy and take a look around!</p>
+                    </div>
+
+                    
+                    <div class="Cuerpo-int">
+
+                        <div class="yo">
+                        <img src="Imagenes/Yo.PNG" class="yo-img">
+                        </div>
+
+                        <div class="Cuerpo-text">
+
+                                <h2>Programs I use</h2>
+
+                                <div class="programs">
+
+                                    <div class="programs-card">
+                                        <p>Rebelle</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Tayasui Watercolor</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Photoshop</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Indesign</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Illustrator</p> 
+                                    </div>
+                                </div>
+
+                            
+                                <h2>My main fandoms</h2>
+                                <div class="programs">
+
+                                    <div class="programs-card">
+                                        <p>The Amazing Digital Circus</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Deltarune</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Good Omens</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Where Is Tracy Maddison</p> 
+                                    </div>
+
+                                    <div class="programs-card">
+                                        <p>Gravity Falls</p> 
+                                    </div>
+                                    <div class="programs-card">
+                                        <p>Mob Psycho 100</p> 
+                                    </div>
+                                    
+                                    <div class="programs-card">
+                                        <p>The Owl House</p> 
+                                    </div>
+                                    <div class="programs-card">
+                                        <p>Ace Attorney</p> 
+                                    </div>
+
+                                  
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </section>
+            
+             <section id="Menu">
+                 
+                 <button id="closeMenu">X</button>
+                 
+                 <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+            
+        </main>
+         <script>
+             const openMenu = document.getElementById("openMenu");
+             const closeMenu = document.getElementById("closeMenu");
+             const Menu = document.getElementById("Menu");
+
+             // Abrir popup
+                openMenu.addEventListener("click", () => {
+                    Menu.classList.add("active");
+                });
+
+            // Cerrar popup
+                closeMenu.addEventListener("click", () => {
+                Menu.classList.remove("active");
+                });
+        </script>
+    </body>
+</html>

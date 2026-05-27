@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+        
+        <title>Trébol Negro</title>
+        
+        <link rel="stylesheet" href="Estilos.css">
+        
+        <link rel="icon" type="png" sizes="32x32" href="Imagenes/icono.png">
+    </head>
+    
+
+    
+    <body>
+        
+    <header>
+        <div id="carta">
+            <img src="Imagenes/HEADER%20cut.png" alt="Trébol Negro" style="max-height: 200px;">
+        </div>
+        
+        
+        <button id="openMenu">Open menu</button>
+        
+    </header>
+        
+        
+        <main>
+            <!--Lateral-->
+            <section class="Lateral">
+
+                <!--musica-->
+                
+                <div class="Cancion">
+                    <p class="cancion-text">Feel free to listen to some music while you look around ♡</p>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.akamai.steamstatic.com%2Fsteamcommunity%2Fpublic%2Fimages%2Fclans%2F12709963%2Fa33a89b18fecb15ea7217bae28b4fc81a720d387.jpg&f=1&nofb=1&ipt=7ac37392a7a00dc0fe17cb9a25b1b24a8849f4ee783bb99249190519c9143162" id="cover">
+                    <a href="https://www.youtube.com/watch?v=0fNuJXNu_wQ" target="_blank" >
+                        <marquee scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" class="titulo-musica">
+                            <p class="link-cancion">🔎︎ Phosphor - NightMargin</p>
+                        </marquee>
+                    </a>
+
+                     <audio controls style="width:200px; height:25px;" src="mp3/Phosphor%20%5B0fNuJXNu_wQ%5D.mp3"></audio>
+                </div>
+                
+                <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+             <section id="Menu">
+                 
+                 <button id="closeMenu">X</button>
+                 
+                 <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+            
+            
+        <section id=portfolio-inner>
+                <img src="Imagenes/Caine.png">
+            
+            <div class="trescolumnas">
+                <img src="Imagenes/thomas.JPG">
+                <img src="Imagenes/soul.PNG">
+                <img src="Imagenes/TRACY%20MADDISON%20ROTO%20TEXTO.png">
+            </div>
+            
+            <div class="doscolumnas">
+                <img src="Imagenes/Jeanne.PNG">
+                <img src="Imagenes/Orange%20boy.PNG">
+            </div>
+            
+            
+            <img src="Imagenes/crayon.PNG">
+            
+            <img src="Imagenes/aziracrow.PNG">
+            
+            <div class="doscolumnas">
+                <img src="Imagenes/Turning%20sweat%20into%20wine%20(1).png">
+                <img src="Imagenes/formas.PNG">
+            </div>
+
+            <div class="trescolumnas">
+                <img src="Imagenes/spamton.PNG">
+                <img src="Imagenes/tenna.jpg">
+                <img src="Imagenes/chris.jpg">
+            </div>
+              
+            <img src="Imagenes/GASTER%20SIN%20BARBAS.png">
+            
+        </section>
+            
+        </main>
+         <script>
+             const openMenu = document.getElementById("openMenu");
+             const closeMenu = document.getElementById("closeMenu");
+             const Menu = document.getElementById("Menu");
+
+             // Abrir popup
+                openMenu.addEventListener("click", () => {
+                    Menu.classList.add("active");
+                });
+
+            // Cerrar popup
+                closeMenu.addEventListener("click", () => {
+                Menu.classList.remove("active");
+                });
+        </script>
+    </body>
+</html>

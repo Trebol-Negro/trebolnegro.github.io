@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+        
+        <title>Trébol Negro</title>
+        
+        <link rel="stylesheet" href="Estilos.css">
+        
+        <link rel="icon" type="png" sizes="32x32" href="Imagenes/icono.png">
+    </head>
+    
+
+    
+    <body>
+        
+    <header>
+        <div id="carta">
+            <img src="Imagenes/HEADER%20cut.png" alt="Trébol Negro" style="max-height: 200px;">
+        </div>
+        
+        
+        <button id="openMenu">Open menu</button>
+        
+    </header>
+        
+        
+        <main>
+            <!--Lateral-->
+            <section class="Lateral">
+
+                <!--musica-->
+                
+                <div class="Cancion">
+                    <p class="cancion-text">Feel free to listen to some music while you look around ♡</p>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.genius.com%2F9b31dd9068d51678acaa2dfdc4f0807d.1000x1000x1.jpg&f=1&nofb=1&ipt=981e527543e5bd921d82a26889840acdece15f5b3a1e5763147dec5e967e482f" id="cover">
+                    <a href="https://www.youtube.com/watch?v=1G5nLWNZrN0" target="_blank" >
+                        <marquee scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" class="titulo-musica">
+                            <p class="link-cancion">🔎︎ One Last Song - TAIKONAUTE</p>
+                        </marquee>
+                    </a>
+
+                     <audio controls style="width:200px; height:25px;" src="mp3/One%20Last%20Song%20-%20A%20Normal%20Lost%20Phone%20Original%20Soundtrack%20%5B1G5nLWNZrN0%5D.mp3"></audio>
+                </div>
+                
+                <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+             <section id="Menu">
+                 
+                 <button id="closeMenu">X</button>
+                 
+                 <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+            
+            <section class="socials">
+                
+                    <a href="https://www.tumblr.com/blog/trebol-negro" target="_blank" class="socials-card">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Ftumblr-vector-png-tumblr-logo-2-1875.png&f=1&nofb=1&ipt=754e78bb807db18eff4a45766faaeea9f0b6f43df3318c832ce7812a2158f82e">
+                        <div class="socials-text">
+                            <h2>Tumblr</h2>
+                            <p>trebol-negro</p>
+                        </div>
+                </a>
+                
+                <a href="https://www.instagram.com/trebol_negro_/" target="_blank" class="socials-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F024%2F170%2F864%2Foriginal%2Finstagram-icon-logo-symbol-free-png.png&f=1&nofb=1&ipt=81fd1555ab02fcf74c5e20cf5a52f6948fc5eec5dba88a678f5478850e8014d1">
+                     <div class="socials-text">
+                        <h2>Instagram</h2>
+                        <p>trebol_negro_</p>
+                    </div>  
+                </a>
+                
+                <a href="https://bsky.app/profile/trebolnegro.bsky.social" target="_blank" class="socials-card">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgyazo.com%2F45fdb0215c249aac7a208f5a222a41d7%2Fmax_size%2F1000&f=1&nofb=1&ipt=4dc282857b0ba979d9ce02e0da077b57adecf8fd732d704757e2e3dac5a8fc75">
+                        <div class="socials-text">
+                            <h2>BlueSky</h2>
+                            <p>trebolnegro.bsky.com</p>
+                        </div>
+
+                </a>
+                
+            </section>
+            
+        </main>  
+        <script>
+             const openMenu = document.getElementById("openMenu");
+             const closeMenu = document.getElementById("closeMenu");
+             const Menu = document.getElementById("Menu");
+
+             // Abrir popup
+                openMenu.addEventListener("click", () => {
+                    Menu.classList.add("active");
+                });
+
+            // Cerrar popup
+                closeMenu.addEventListener("click", () => {
+                Menu.classList.remove("active");
+                });
+        </script>
+    </body>
+</html>

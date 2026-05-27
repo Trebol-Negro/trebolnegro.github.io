@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+        
+        <title>Trébol Negro</title>
+        
+        <link rel="stylesheet" href="Estilos.css">
+        
+        <link rel="icon" type="png" sizes="32x32" href="Imagenes/icono.png">
+    </head>
+    
+
+    
+    <body>
+        
+    <header>
+        <div id="carta">
+            <img src="Imagenes/HEADER%20cut.png" alt="Trébol Negro" style="max-height: 200px;">
+        </div>
+        
+        
+        <button id="openMenu">Open menu</button>
+        
+    </header>
+        
+        
+        <main>
+            <!--Lateral-->
+            <section class="Lateral">
+
+                <!--musica-->
+                
+                <div class="Cancion">
+                    <p class="cancion-text">Feel free to listen to some music while you look around ♡</p>
+                    <img src="https://img.youtube.com/vi/7WjYLj59emY/0.jpg" id="cover">
+                    <a href="https://www.youtube.com/watch?v=7WjYLj59emY" target="_blank" >
+                        <marquee scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();" class="titulo-musica">
+                            <p class="link-cancion">🔎︎ Tokyo Fashion District - Nobonoko</p>
+                        </marquee>
+                    </a>
+
+                     <audio controls style="width:200px; height:25px;" src="mp3/nobonoko%20-%20Tokyo%20Fashion%20District%20%5B7WjYLj59emY%5D.mp3"></audio>
+                </div>
+                
+                <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+             <section id="Menu">
+                 
+                 <button id="closeMenu">X</button>
+                 
+                 <nav>
+                    
+                    <!--Sobre mi-->
+                    <a href="index.html">ABOUT ME</a>
+                  
+                    <!--portfolio-->
+                    <a href="Portfolio.html">PORTFOLIO</a>
+                    
+                    <!--Proyectos-->
+                    <a href="Projects.html">PROJECTS</a>
+                  
+                    <!--Comisiones-->
+                    <a href="Commissions.html">COMMISSIONS</a>
+                
+                    <!--Redes sociales-->
+                    <a href="Socials.html">SOCIALS</a>
+             
+                </nav>
+            </section>
+<div class="com">           
+<p id="com">NOTE: Commissions currently CLOSED</p>
+<h1>Previous commissions</h1>
+        <section id=portfolio-inner>
+                <img src="Imagenes/Comisi%C3%B3n%20Cuppa.PNG">
+                <img src="Imagenes/Puzzle%20Commission.PNG">
+                <img src="Imagenes/Comm.caddis.png">
+            
+        </section>
+            </div>
+            
+        </main>
+         <script>
+             const openMenu = document.getElementById("openMenu");
+             const closeMenu = document.getElementById("closeMenu");
+             const Menu = document.getElementById("Menu");
+
+             // Abrir popup
+                openMenu.addEventListener("click", () => {
+                    Menu.classList.add("active");
+                });
+
+            // Cerrar popup
+                closeMenu.addEventListener("click", () => {
+                Menu.classList.remove("active");
+                });
+        </script>
+    </body>
+</html>
